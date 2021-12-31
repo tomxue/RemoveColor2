@@ -19,12 +19,18 @@
                      VerticalAlignment="Top"                      
                      ScrollViewer.CanContentScroll="True"
                      ScrollViewer.VerticalScrollBarVisibility="Auto"
-                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                     >
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="4"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Setter Property="BorderThickness" Value="0 0 0 0"/>
+                </Style>
+            </ListBox.Resources>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical" Background="Transparent">
-                        <Button Name="ItemButton"  BorderThickness="0" Padding="-2" Background="#40475F" Margin="0" Height="50">
+                        <Button Name="ItemButton"  BorderThickness="0" Padding="0" Background="#40475F" Margin="0" Height="50">
                         </Button>
 
                         <Border Width="360" Margin="-10,0,-10,0" Height="1" Background="#383F55"/>
