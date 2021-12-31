@@ -21,16 +21,6 @@
                      ScrollViewer.VerticalScrollBarVisibility="Auto"
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                      >
-            <ListBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="4"/>
-                </Style>
-                <Style TargetType="{x:Type Thumb}">
-                    <Setter Property="Width" Value="6"/>
-                </Style>
-                <Style TargetType="{x:Type ScrollBar}">
-                </Style>
-            </ListBox.Resources>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical" Background="Transparent">
